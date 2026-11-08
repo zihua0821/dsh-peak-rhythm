@@ -1,8 +1,12 @@
 # 峰谷节奏（peak-rhythm）
 
+[![CI](https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%E2%89%A522-339933)](package.json)
+
 Aurabot 的独立模块：**DeepSeek 高峰时段少说话，空闲时段活跃一点**。
 
-峰谷口径和计价插件 [`dsh-meter`](https://github.com/J-Chien/dsh-meter) 完全对齐——
+峰谷口径和计价插件 [`dsh-meter`](https://www.npmjs.com/package/dsh-meter) 完全对齐——
 按真实的峰谷计价来调整聊天频率，不是拍脑袋定时段。
 
 ## 规则
@@ -43,10 +47,24 @@ QQ 里发 `/峰谷` 随时看当前状态、参数和日历覆盖。
 
 ## 安装 / 部署
 
+**前置**：Aurabot（本机 DSH 的 QQ 插件）。本模块不依赖 DSH 的其它插件，
+也不需要 `dsh-meter`——没装它照样跑，只是那项「日历对齐」测试会自动跳过。
+
 ```powershell
+git clone https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm.git
+cd dsh-peak-rhythm
+
 node scripts/deploy.mjs        # 复制到 %USERPROFILE%\.dsh\plugins-data\aurabot\modules\peak-rhythm
 # Aurabot 会在 3 秒内热加载（日志：模块「峰谷节奏」已启动）
 ```
+
+部署脚本只写 `index.mjs` 和 `calendar.mjs` 两个文件；`--dry` 可以只看会改什么：
+
+```powershell
+node scripts/deploy.mjs --dry
+```
+
+参数在 Aurabot 面板 → 系统 → **峰谷节奏**；改完即时生效，不用重新部署。
 
 ## 验证
 
@@ -99,6 +117,11 @@ node scripts/state.mjs 2026-10-01   # 看某天（会正确地判成「法定节
 - `/峰谷` 命令、`scripts/state.mjs`（命令行查状态）、`scripts/deploy.mjs`。
 - 21 项测试，其中一条与 `dsh-meter` 的日历逐条对齐。
 
+## 相关项目
+
+- [`dsh-meme-brain`](https://github.com/YOUR-GITHUB-USER/dsh-meme-brain) —— 本机表情包管理系统
+  （DSH 插件 + Aurabot 模块「表情脑」）。两个模块互不依赖，只是同一个宿主下的两个出口。
+
 ## License
 
-MIT
+MIT。详见 [LICENSE](LICENSE)。

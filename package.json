@@ -1,10 +1,13 @@
 {
-  "name": "aurabot-peak-rhythm",
+  "name": "dsh-peak-rhythm",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "Aurabot 模块：按 DeepSeek 峰谷时段调整群聊回复频率（含中国法定节假日，和 dsh-meter 计价口径一致）",
   "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./calendar": "./calendar.mjs"
+  },
   "scripts": {
     "test": "node --test \"test/*.test.js\"",
     "deploy": "node scripts/deploy.mjs",
@@ -20,5 +23,23 @@
   "engines": {
     "node": ">=22"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "aurabot",
+    "dsh",
+    "deepseek",
+    "peak",
+    "off-peak",
+    "pricing",
+    "chatbot",
+    "qqbot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm.git"
+  },
+  "homepage": "https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm/issues"
+  }
 }
