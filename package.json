@@ -36,10 +36,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm.git"
+    "url": "git+https://github.com/zihua0821/dsh-peak-rhythm.git"
   },
-  "homepage": "https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm#readme",
+  "homepage": "https://github.com/zihua0821/dsh-peak-rhythm#readme",
   "bugs": {
-    "url": "https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm/issues"
+    "url": "https://github.com/zihua0821/dsh-peak-rhythm/issues"
   }
 }

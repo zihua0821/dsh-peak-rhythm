@@ -1,6 +1,6 @@
 # 峰谷节奏（peak-rhythm）
 
-[![CI](https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm/actions/workflows/ci.yml)
+[![CI](https://github.com/zihua0821/dsh-peak-rhythm/actions/workflows/ci.yml/badge.svg)](https://github.com/zihua0821/dsh-peak-rhythm/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A522-339933)](package.json)
 
@@ -51,7 +51,7 @@ QQ 里发 `/峰谷` 随时看当前状态、参数和日历覆盖。
 也不需要 `dsh-meter`——没装它照样跑，只是那项「日历对齐」测试会自动跳过。
 
 ```powershell
-git clone https://github.com/YOUR-GITHUB-USER/dsh-peak-rhythm.git
+git clone https://github.com/zihua0821/dsh-peak-rhythm.git
 cd dsh-peak-rhythm
 
 node scripts/deploy.mjs        # 复制到 %USERPROFILE%\.dsh\plugins-data\aurabot\modules\peak-rhythm
@@ -119,7 +119,7 @@ node scripts/state.mjs 2026-10-01   # 看某天（会正确地判成「法定节
 
 ## 相关项目
 
-- [`dsh-meme-brain`](https://github.com/YOUR-GITHUB-USER/dsh-meme-brain) —— 本机表情包管理系统
+- [`dsh-meme-brain`](https://github.com/zihua0821/dsh-meme-brain) —— 本机表情包管理系统
   （DSH 插件 + Aurabot 模块「表情脑」）。两个模块互不依赖，只是同一个宿主下的两个出口。
 
 ## License
